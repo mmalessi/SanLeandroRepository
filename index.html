@@ -72,13 +72,14 @@ body {
 <script>
 /********************Loading the JSON Data Once***********************/
 var yourUrl = "www.polartide.org/php/getdataHour.php";
-function Get(yourUrl){
+/*function Get(yourUrl){
 var Httpreq = new XMLHttpRequest(); // a new request
 
 Httpreq.open("GET",yourUrl,false);
 Httpreq.send(null);
 return Httpreq.responseText;          
     }
+*/
 
 var json_obj = JSON.parse(Get(yourUrl));
 console.log(json_obj);
