@@ -119,7 +119,7 @@ var svg = d3.select("body").append("svg")
 
 svg.call(tip);
 
-var data = json_obj.map( function(d){return {hour: d.hour, point: +d.points}});
+var data = json_obj.map( function(d){return {hour: d.hour, points: +d.points}});
 
 
   x.domain(data.map(function(d) { return d.hour; }));
