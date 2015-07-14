@@ -18,7 +18,7 @@ if (!$db_selected) {
 
 
     $myquery = "
-    select * from URBANIO_FAKE;
+    select * from uHour;
     ";
 
     $query = mysql_query($myquery);
