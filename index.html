@@ -71,12 +71,12 @@ body {
 <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <script>
 /********************Loading the JSON Data Once***********************/
-var yourUrl = "www.polartide.org/php/getdataHour.php";
+var yourUrl = "/SanLeandroRepository/getHourdata.json";
 function Get(yourUrl){
 var Httpreq = new XMLHttpRequest(); // a new request
-/*Httpreq.open("GET",yourUrl,false);
-/*Httpreq.send(null);*/
-return /*Httpreq.*/responseText;          
+Httpreq.open("GET",yourUrl,false);
+Httpreq.send(null);
+return Httpreq.responseText;          
     }
 
 
